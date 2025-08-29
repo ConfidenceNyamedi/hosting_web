@@ -1,0 +1,308 @@
+/* ---------- Global Styles ---------- */
+:root {
+    --primary: #1877f2;   /* Facebook blue */
+    --secondary: #42b72a; /* Green accent */
+    --light: #f0f2f5;     /* Background */
+    --dark: #1c1e21;      /* Text */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--light);
+    color: var(--dark);
+}
+
+/* ---------- Header & Navigation ---------- */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header img.logo {
+    height: 50px;
+    width: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+/* ---------- Hero Section (Home Page) ---------- */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: white;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* ---------- Contact Page (Facebook-style login card) ---------- */
+.contact-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.contact-card h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.contact-card input, 
+.contact-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-card button {
+    width: 100%;
+    background: var(--primary);
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-card button:hover {
+    background: #145dbf;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--dark);
+    color: white;
+    margin-top: auto;
+}
+/* ---------- Projects Page ---------- */
+.projects-container {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.projects-container h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    margin: 0.5rem 0;
+    color: var(--dark);
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    text-decoration: none;
+    background: var(--primary);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+.project-card a:hover {
+    background: #145dbf;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+/* ---------- About Page ---------- */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.about-card {
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.about-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid var(--primary);
+}
+
+.about-card h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.about-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+}/* ---------- Contact Page ---------- */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.contact-card {
+    background: white;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.contact-card h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.contact-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-card input,
+.contact-card textarea {
+    padding: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+.contact-card button {
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-card button:hover {
+    background: #0056b3;
+}
+

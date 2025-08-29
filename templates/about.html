@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="about-container">
+    <div class="about-card">
+        <img src="{{ url_for('static', filename='con.jpg') }}" alt="Profile Picture" class="about-img">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm <strong>Confidence Nyamedi</strong>, a passionate developer who loves building
+            modern web applications with <span style="color:var(--primary);">Flask, HTML, CSS, Python</span> 
+            and JavaScript. 🚀  
+        </p>
+        <p>
+            I enjoy solving problems, learning new technologies, and creating beautiful user experiences.
+        </p>
+        <p>
+            When I'm not coding, you can find me exploring the outdoors, reading tech blogs, 
+            or experimenting with new recipes in the kitchen. 🍳
+        </p>
+        <p>
+            And also am a <span style="color:var(--primary);">graphic designer, media personnel, specializing in Adobe Photoshop, Adobe Illustrator, 
+            Adobe Premiere Pro, After Effects, and Camera handling.</span> 🎨🎥
+        </p>
+    </div>
+</div>
+{% endblock %}

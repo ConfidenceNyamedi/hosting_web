@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="projects-container">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+
+        <!-- Project Card -->
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='log.jpg') }}" alt="Project 1">
+            <h3>Flask-Powered</h3>
+            <p>A web app built with Flask and styled with modern CSS.
+                "A modern web app crafted with Flask and CSS, designed to deliver a fast, 
+                responsive, and visually stunning experience."
+                "Flask-powered and CSS-styled, this web app combines robust functionality with a sleek,
+                 user-friendly interface."
+
+            </p>
+            <a href="#">View Project</a>
+        </div>
+
+        <!-- Project Card -->
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='tetris.jpg') }}" alt="Project 2">
+            <h3>Tetris</h3>
+            <p>Develop a tetris game with python.
+                creating a classic game like Tetris requires a good understanding of game development concepts,
+                including game loops, collision detection, and user input handling.
+            </p>
+            <a href="#">View Project</a>
+        </div>
+
+        <!-- Project Card -->
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='create.jpg') }}" alt="Project 3">
+            <h3>Graphic Design</h3>
+            <p> Crafting visual stories through graphic design, where creativity meets functionality.
+           </p>
+            <a href="#">View Project</a>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
